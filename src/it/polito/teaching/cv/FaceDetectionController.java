@@ -70,10 +70,12 @@ public class FaceDetectionController
 		// set a fixed width for the frame
 		originalFrame.setFitWidth(600);
 		// preserve image ratio
+		
 		originalFrame.setPreserveRatio(true);
 	}
 	
 	/**
+	 * 
 	 * The action triggered by pushing the button on the GUI
 	 */
 	@FXML
@@ -216,7 +218,7 @@ public class FaceDetectionController
 		// check whether the lpb checkbox is selected and deselect it
 		if (this.lbpClassifier.isSelected())
 			this.lbpClassifier.setSelected(false);
-			
+			//
 		this.checkboxSelection("resources/haarcascades/haarcascade_frontalface_alt.xml");
 	}
 	
